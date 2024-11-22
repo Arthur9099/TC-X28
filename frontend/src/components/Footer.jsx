@@ -185,7 +185,7 @@ export default function Footer() {
       </div>
 
       <div class="bg-gray-800 py-5 px-4 text-center">
-        <p class="text-gray-300 text-sm">© ReadymadeUI. All rights reserved.</p>
+        <p class="text-gray-300 text-sm">© Ecommerce. TC - X28.</p>
       </div>
     </footer>
   );
