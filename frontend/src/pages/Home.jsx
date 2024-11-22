@@ -14,11 +14,21 @@ export default function Home() {
     <div>
       <Header></Header>
       <Carousel></Carousel>
-      <HeroSection01></HeroSection01>
-      <ProductCarousel></ProductCarousel>
-      <Category></Category>
-      <HeroSection02></HeroSection02>
+      <div className="text-left text-[28px] mt-[50px] mb-4 ml-20 font-semibold">
+        BÁN CHẠY NHẤT
+      </div>
       <ProductList></ProductList>
+      <HeroSection01></HeroSection01>
+      <div className="text-left text-[28px] mt-[50px] mb-4 ml-20 font-semibold">
+        PC BÁN CHẠY NHẤT
+      </div>
+      <ProductList></ProductList>
+      <HeroSection02></HeroSection02>
+      <div className="text-left text-[28px] mt-[50px] mb-4 ml-20 font-semibold">
+        TAI NGHE GAMING BÁN CHẠY NHẤT
+      </div>
+      <ProductList></ProductList>
+      <Category></Category>
       <LatestBlog></LatestBlog>
       <Footer></Footer>
     </div>

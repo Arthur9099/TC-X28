@@ -3,30 +3,30 @@ import { Link, useNavigate } from "react-router-dom";
 
 function HeroSection01() {
   return (
-    <div class="grid md:grid-cols-2 items-center md:gap-4 gap-8 font-archivo max-w-5xl max-md:max-w-md mx-auto mt-10 mb-10">
-      <div class="max-md:order-1 max-md:text-center">
-        <h3 class="text-gray-800 md:text-3xl text-2xl md:leading-10">
-          Prompt Delivery and Enjoyable Dining Experience.
-        </h3>
-        <p class="mt-4 text-sm text-gray-600">
-          Laboris qui Lorem ad tempor ut reprehenderit. Nostrud anim nulla
-          officia ea sit deserunt. Eu eu quis anim aute Laboris qui Lorem ad
-          tempor ut reprehenderit.
-        </p>
-        <Link to="/store">
-          <button class="w-[280px] h-[50px] px-5 py-2.5 overflow-hidden group bg-[#FFBE00] relative hover:bg-gradient-to-r hover:from-[#FFBE00] hover:to-indigo-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-indigo-400 transition-all ease-out duration-300">
-            <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-            <span class="relative text-base font-semibold">PURCHASE NOW</span>
-          </button>
-        </Link>
+    <section class="bg-white dark:bg-gray-900 mt-[50px]">
+      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+          <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+            PC BÁN CHẠY
+          </h1>
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            Những mẫu pc build sẵn cực mạnh mẽ với giá ưu đãi hấp dẫn
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+          >
+            Khám phá ngay
+          </a>
+        </div>
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+            alt="mockup"
+          ></img>
+        </div>
       </div>
-      <div class="md:h-[470px]">
-        <img
-          src="/images/black-friday-no-bg.png"
-          class="w-full h-full md:object-contain"
-        />
-      </div>
-    </div>
+    </section>
   );
 }
 

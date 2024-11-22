@@ -6,7 +6,7 @@ function LatestBlog() {
       <div class="max-w-6xl mx-auto">
         <div class="text-center">
           <h2 class="text-3xl font-extrabold text-gray-800 inline-block relative after:absolute after:w-4/6 after:h-1 after:left-0 after:right-0 after:-bottom-4 after:mx-auto after:bg-pink-400 after:rounded-full">
-            LATEST BLOGS
+            Tin tức công nghệ và khuyến mãi
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16 max-lg:max-w-3xl max-md:max-w-md mx-auto">

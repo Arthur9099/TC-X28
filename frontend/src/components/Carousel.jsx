@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const CarouselItem = ({ item, isActive }) => (
   <div
-    className={`relative flex-shrink-0 w-full h-[86vh] transition-opacity duration-300 ${
+    className={`relative flex-shrink-0 w-full h-[70vh] transition-opacity duration-300 ${
       isActive ? "opacity-100" : "opacity-0 absolute top-0 left-0"
     }`}
   >
@@ -13,13 +13,15 @@ const CarouselItem = ({ item, isActive }) => (
       alt={item.name}
       className="w-full h-full object-cover"
     />
-    <div className="absolute font-archivo bottom-[300px] left-[100px] right-[100px] max-w-[100vh] bg-gradient-to-t to-transparent p-4">
+    <div className="absolute font-roboto bottom-[300px] left-[100px] right-[100px] max-w-[100vh] bg-gradient-to-t to-transparent p-4">
       <h3 className="text-white text-xl font-bold">{item.name}</h3>
-      <p className="text-white text-[60px] mt-1">{item.description}</p>
+      <p className="text-white text-[56px] mt-1 font-semibold">
+        {item.description}
+      </p>
       <Link to="/store">
         <button class="w-[280px] h-[50px] px-5 py-2.5 overflow-hidden group bg-[#FFBE00] relative hover:bg-gradient-to-r hover:from-[#FFBE00] hover:to-indigo-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-indigo-400 transition-all ease-out duration-300">
           <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-          <span class="relative text-base font-semibold">PURCHASE NOW</span>
+          <span class="relative text-base font-semibold">KHÁM PHÁ NGAY</span>
         </button>
       </Link>
     </div>
@@ -34,26 +36,26 @@ const Carousel = () => {
   const items = [
     {
       id: 1,
-      name: "Gourmet Burger",
-      description: "Juicy beef patty with premium toppings",
+      name: "Build Pc theo yêu cầu",
+      description: "Đáp ứng mọi cấu hình, lắp ráp nhanh chóng",
       image: "/images/pc-case.jpg",
     },
     {
       id: 2,
-      name: "Margherita Pizza",
-      description: "Classic Italian pizza with fresh mozzarella",
+      name: "Những mẫu laptop mới nhất",
+      description: "Hiệu năng khủng, tiết kiệm điện và thiết kế đẹp",
       image: "/images/macbook.jpg",
     },
     {
       id: 3,
-      name: "Sushi Platter",
-      description: "Assorted fresh sushi and sashimi",
+      name: "Pc AMD mới nhất",
+      description: "Cân mọi tựa game AAA với cấu hình cực khủng",
       image: "/images/desktop.jpg",
     },
     {
       id: 4,
-      name: "Grilled Salmon",
-      description: "Perfectly grilled salmon with lemon butter",
+      name: "Tai nghe gaming wireless",
+      description: "Âm thanh sống động đi kèm nhiều ưu đãi hấp dẫn",
       image: "/images/headset.jpg",
     },
   ];

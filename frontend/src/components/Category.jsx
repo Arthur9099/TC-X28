@@ -3,9 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Category() {
   return (
-    <div class="max-w-6xl mx-auto font-[sans-serif] mt-[100px]">
-      <h2 class="text-gray-800 sm:text-4xl text-2xl font-extrabold text-center mb-16">
-        Discover Our Exclusive Features
+    <div class="max-w-6xl mx-auto font-roboto mt-[100px]">
+      <h2 class="text-black text-[28px] font-semibold text-center mb-16">
+        DANH MỤC SẢN PHẨM
       </h2>
 
       <div class="grid lg:grid-cols-3 md:grid-cols-2 max-md:max-w-lg mx-auto gap-12">
@@ -27,9 +27,7 @@ function Category() {
               />
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                Customization
-              </h3>
+              <h3 class="text-gray-800 text-xl font-semibold mb-3">Pc</h3>
               <p class="text-gray-600 text-sm">
                 Tailor our product to suit your needs Expand your reach with our
                 global network.
@@ -72,7 +70,7 @@ function Category() {
               </g>
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">Security</h3>
+              <h3 class="text-gray-800 text-xl font-semibold mb-3">Laptop</h3>
               <p class="text-gray-600 text-sm">
                 Your data is protected by the latest security measures.
               </p>
@@ -94,7 +92,7 @@ function Category() {
               />
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">Support</h3>
+              <h3 class="text-gray-800 text-xl font-semibold mb-3">Màn hình</h3>
               <p class="text-gray-600 text-sm">
                 Tailor our product to suit your needs 24/7 customer support for
                 all your inquiries.
@@ -128,7 +126,7 @@ function Category() {
             </svg>
             <div>
               <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                Performance
+                Chuột và lót chuột
               </h3>
               <p class="text-gray-600 text-sm">
                 Experience blazing-fast performance with our product.
@@ -175,9 +173,7 @@ function Category() {
               />
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                Global Reach
-              </h3>
+              <h3 class="text-gray-800 text-xl font-semibold mb-3">Tai nghe</h3>
               <p class="text-gray-600 text-sm">
                 Tailor our product to suit your needs Expand your reach with our
                 global network.
@@ -215,7 +211,7 @@ function Category() {
             </svg>
             <div>
               <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                Communication
+                Card màn hình
               </h3>
               <p class="text-gray-600 text-sm">
                 Tailor our product to suit your needs Seamless communication for

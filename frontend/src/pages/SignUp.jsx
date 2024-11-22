@@ -141,7 +141,7 @@ function SignUp() {
                   <div class="mr-3 text-sm text-gray-800">
                     Already have an account?
                   </div>
-                  <Link to="/log-in">
+                  <Link to="/sign-in">
                     <a
                       href="jajvascript:void(0);"
                       class="text-blue-600 text-sm hover:underline"

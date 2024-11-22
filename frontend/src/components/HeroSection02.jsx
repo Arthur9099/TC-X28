@@ -8,27 +8,20 @@ function HeroSection02() {
         <div class="max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:py-32 lg:px-8">
           <div class="relative z-10 text-center lg:text-left">
             <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-white sm:text-5xl sm:leading-none md:text-6xl lg:text-7xl">
-              Welcome to
               <br class="xl:hidden" />
-              <span class="text-indigo-400"> Premium Delights</span>
+              <span class="text-indigo-400"> TAI NGHE GAMING</span>
             </h1>
             <p class="max-w-md mx-auto text-lg text-gray-300 sm:text-xl mt-4 md:mt-6 md:max-w-3xl">
-              Elevate your culinary experience with our exclusive premium
-              services. Indulge in exquisite flavors and extraordinary moments.
+              Thiết kế thời thượng, âm thanh sống động mang đến trải nghiệm nghe
+              có một không hai
             </p>
 
             <div class="mt-12 flex max-sm:flex-col sm:justify-center lg:justify-start gap-4">
-              <div class="rounded-md shadow">
-                <Link to="/store">
-                  <button class="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-indigo-600 bg-white hover:text-indigo-500 hover:bg-indigo-100 transition duration-150 ease-in-out">
-                    Get Started
-                  </button>
-                </Link>
-              </div>
+              <div class="rounded-md shadow"></div>
               <div>
                 <Link to="/about-us">
                   <button class="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition duration-150 ease-in-out">
-                    Learn More
+                    Khám phá ngay
                   </button>
                 </Link>
               </div>

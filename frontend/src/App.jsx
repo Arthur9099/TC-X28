@@ -6,6 +6,9 @@ import Store from "./pages/Store";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ShoppingCart from "./pages/ShoppingCart";
+import ProductDetail from "./pages/ProductDetail";
+import ProductCard from "./components/ProductCard";
+import ProductList from "./components/ProductList";
 
 function App() {
   return (
@@ -20,6 +23,10 @@ function App() {
         <Route
           path="/shopping-cart"
           element={<ShoppingCart></ShoppingCart>}
+        ></Route>
+        <Route
+          path="/product-detail"
+          element={<ProductDetail></ProductDetail>}
         ></Route>
       </Routes>
     </BrowserRouter>
