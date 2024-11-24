@@ -16,7 +16,7 @@ export default function Header() {
         <div className="flex flex-wrap w-full items-center">
           <input
             type="text"
-            placeholder="Search something..."
+            placeholder="Bạn cần tìm gì ..."
             className="xl:w-96 max-lg:w-full lg:ml-10 max-md:mt-4 max-lg:ml-4 bg-gray-100 focus:bg-transparent px-6 rounded h-11 outline-[#333] text-sm transition-all"
           />
           <div className="ml-auto max-lg:mt-4">

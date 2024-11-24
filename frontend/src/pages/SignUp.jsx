@@ -2,16 +2,136 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { validateEmail } from "../utils/helper";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
+import { IoPersonOutline } from "react-icons/io5";
+import { IoIosPhonePortrait } from "react-icons/io";
 import axiosInstance from "../utils/axiosInstance";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function SignUp() {
+  const [isShowPassword, setIsShowPassword] = useState(false);
+  const [isShowConfirmPassword, setIsShowConfirmPassword] = useState(false);
+  const togggleShowPassword = () => {
+    setIsShowPassword(!isShowPassword);
+  };
+  const togggleShowConfirmPassword = () => {
+    setIsShowConfirmPassword(!isShowConfirmPassword);
+  };
+
+  const [name, setName] = useState("");
+  const [phoneNumber, setPhoneNumer] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [nameError, setNameError] = useState(null);
+  const [phoneNumberError, setPhoneNumberError] = useState(null);
+  const [emailError, setEmailError] = useState(null);
+  const [passwordError, setPasswordError] = useState(null);
+  const [confirmPasswordError, setConfirmPasswordError] = useState(null);
+
+  const navigate = useNavigate();
+
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    if (
+      !name &&
+      !phoneNumber &&
+      !validateEmail(email) &&
+      !password &&
+      !confirmPassword
+    ) {
+      setNameError("Vui lòng nhập tên của bạn");
+      document.getElementById("nameInput").style.borderColor = "red";
+      setPhoneNumberError("Vui lòng nhập SĐT của bạn");
+      document.getElementById("phoneNumberInput").style.borderColor = "red";
+      setEmailError("Vui lòng nhập email của bạn");
+      document.getElementById("emailInput").style.borderColor = "red";
+      setPasswordError("Vui lòng nhập mật khẩu của bạn");
+      document.getElementById("passwordInput").style.borderColor = "red";
+      setConfirmPasswordError("Vui lòng nhập mật khẩu của bạn");
+      document.getElementById("confirmPasswordInput").style.borderColor = "red";
+      return;
+    }
+
+    if (!name) {
+      setNameError("Vui lòng nhập tên của bạn");
+      document.getElementById("nameInput").style.borderColor = "red";
+      return;
+    } else {
+      setNameError("");
+      document.getElementById("nameInput").style.borderColor = "#d1d5db";
+    }
+    if (!phoneNumber) {
+      setPhoneNumberError("Vui lòng nhập SĐT của bạn");
+      document.getElementById("phoneNumberInput").style.borderColor = "red";
+      setPhoneNumberError("");
+      document.getElementById("phoneNumberInput").style.borderColor = "#d1d5db";
+      return;
+    }
+    if (!validateEmail(email)) {
+      setEmailError("Vui lòng nhập email của bạn");
+      document.getElementById("emailInput").style.borderColor = "red";
+      return;
+    } else {
+      setEmailError("");
+      document.getElementById("emailInput").style.borderColor = "#d1d5db";
+    }
+    if (!password) {
+      setPasswordError("Vui lòng nhập mật khẩu của bạn");
+      document.getElementById("passwordInput").style.borderColor = "red";
+      return;
+    } else {
+      setPasswordError("");
+      document.getElementById("passwordInput").style.borderColor = "#d1d5db";
+    }
+    if (!confirmPassword) {
+      setConfirmPasswordError("Vui lòng nhập mật khẩu của bạn");
+      document.getElementById("confirmPasswordInput").style.borderColor = "red";
+      return;
+    } else {
+      setConfirmPasswordError("");
+      document.getElementById("confirmPasswordInput").style.borderColor =
+        "#d1d5db";
+    }
+    if (password != confirmPassword) {
+      setConfirmPasswordError("Mật khẩu không trùng khớp");
+      document.getElementById("confirmPasswordInput").style.borderColor = "red";
+      return;
+    }
+
+    // Sign Up API Call
+    try {
+      const response = await axiosInstance.post("/sign-up", {
+        userName: name,
+        phoneNumber: phoneNumber,
+        email: email,
+        password: password,
+      });
+      // Handle successfull registration response
+      if (response.data.success) {
+        navigate("/sign-in");
+      } else {
+        setConfirmPasswordError("Tài khoản đã tồn tại");
+      }
+    } catch (error) {
+      // Handle Sign Up error
+      if (
+        error.response &&
+        error.response.data &&
+        error.response.data.message
+      ) {
+        setError(error.response.data.message);
+      } else {
+        setError("An unexpected error occurred. Please try again!");
+      }
+    }
+  };
   return (
     <div>
       <Header></Header>
       <div>
-        <div class="font-archivo">
-          <div class="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-4">
+        <div class="font-roboto">
+          <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-4">
             <div class="max-md:order-1 h-screen min-h-full max-sm:hidden">
               <img
                 src="/images/headset.jpg"
@@ -20,20 +140,76 @@ function SignUp() {
               />
             </div>
 
-            <form class="max-w-xl w-full p-6 mx-auto">
-              <div class="mb-12">
-                <h3 class="text-gray-800 text-4xl font-extrabold">Sign up</h3>
+            <form class="max-w-xl w-full p-6 mx-auto" onSubmit={handleSignUp}>
+              <div class="mb-8">
+                <h3 class="text-gray-800 text-4xl font-extrabold">Đăng ký</h3>
               </div>
 
               <div>
+                <label class="text-gray-800 text-sm block mb-2">
+                  Tên người dùng
+                </label>
+                <div class="relative flex items-center">
+                  <input
+                    id="nameInput"
+                    name="name"
+                    type="text"
+                    value={name}
+                    class="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
+                    placeholder="Tên của bạn"
+                    onChange={(e) => {
+                      setName(e.target.value);
+                    }}
+                  />
+                  <IoPersonOutline
+                    size={20}
+                    className="text-slate-400 absolute right-2"
+                  ></IoPersonOutline>
+                </div>
+              </div>
+              {nameError && (
+                <p className="text-red-500 text-sm pt-2">{nameError}</p>
+              )}
+
+              <div class="mt-8">
+                <label class="text-gray-800 text-sm block mb-2">
+                  Số điện thoại
+                </label>
+                <div class="relative flex items-center">
+                  <input
+                    id="phoneNumberInput"
+                    name="phoneNumber"
+                    type="number"
+                    value={phoneNumber}
+                    class="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
+                    placeholder="Số điện thoại của bạn"
+                    onChange={(e) => {
+                      setPhoneNumer(e.target.value);
+                    }}
+                  />
+                  <IoIosPhonePortrait
+                    size={20}
+                    className="text-slate-400 absolute right-2"
+                  ></IoIosPhonePortrait>
+                </div>
+              </div>
+              {phoneNumberError && (
+                <p className="text-red-500 text-sm pt-2">{phoneNumberError}</p>
+              )}
+
+              <div class="mt-8">
                 <label class="text-gray-800 text-sm block mb-2">Email</label>
                 <div class="relative flex items-center">
                   <input
+                    id="emailInput"
                     name="email"
                     type="text"
-                    required
+                    value={email}
                     class="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
-                    placeholder="Enter email"
+                    placeholder="Email của bạn"
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -69,98 +245,104 @@ function SignUp() {
                   </svg>
                 </div>
               </div>
+              {emailError && (
+                <p className="text-red-500 text-sm pt-2">{emailError}</p>
+              )}
 
               <div class="mt-8">
-                <label class="text-gray-800 text-sm block mb-2">Password</label>
+                <label class="text-gray-800 text-sm block mb-2">Mật khẩu</label>
                 <div class="relative flex items-center">
                   <input
+                    id="passwordInput"
                     name="password"
-                    type="password"
-                    required
+                    type={isShowPassword ? "text" : "password"}
+                    value={password}
                     class="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
-                    placeholder="Enter password"
+                    placeholder="Mật khẩu của bạn"
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                    }}
                   />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#bbb"
-                    stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2 cursor-pointer"
-                    viewBox="0 0 128 128"
-                  >
-                    <path
-                      d="M64 104C22.127 104 1.367 67.496.504 65.943a4 4 0 0 1 0-3.887C1.367 60.504 22.127 24 64 24s62.633 36.504 63.496 38.057a4 4 0 0 1 0 3.887C126.633 67.496 105.873 104 64 104zM8.707 63.994C13.465 71.205 32.146 96 64 96c31.955 0 50.553-24.775 55.293-31.994C114.535 56.795 95.854 32 64 32 32.045 32 13.447 56.775 8.707 63.994zM64 88c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm0-40c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16z"
-                      data-original="#000000"
-                    ></path>
-                  </svg>
+                  {isShowPassword ? (
+                    <FaRegEye
+                      size={20}
+                      className="text-primary cursor-pointer absolute right-2"
+                      onClick={() => togggleShowPassword()}
+                    ></FaRegEye>
+                  ) : (
+                    <FaRegEyeSlash
+                      size={20}
+                      className="text-slate-400 cursor-pointer absolute right-2"
+                      onClick={() => togggleShowPassword()}
+                    ></FaRegEyeSlash>
+                  )}
                 </div>
               </div>
+              {passwordError && (
+                <p className="text-red-500 text-sm pt-2">{passwordError}</p>
+              )}
 
               <div class="mt-8">
                 <label class="text-gray-800 text-sm block mb-2">
-                  Confirm Password
+                  Xác nhận mật khẩu
                 </label>
                 <div class="relative flex items-center">
                   <input
-                    name="password"
-                    type="password"
-                    required
+                    id="confirmPasswordInput"
+                    name="confirm-password"
+                    type={isShowConfirmPassword ? "text" : "password"}
                     class="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
-                    placeholder="Enter password"
+                    placeholder="Mật khẩu của bạn"
+                    value={confirmPassword}
+                    onChange={(e) => {
+                      setConfirmPassword(e.target.value);
+                    }}
                   />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#bbb"
-                    stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2 cursor-pointer"
-                    viewBox="0 0 128 128"
-                  >
-                    <path
-                      d="M64 104C22.127 104 1.367 67.496.504 65.943a4 4 0 0 1 0-3.887C1.367 60.504 22.127 24 64 24s62.633 36.504 63.496 38.057a4 4 0 0 1 0 3.887C126.633 67.496 105.873 104 64 104zM8.707 63.994C13.465 71.205 32.146 96 64 96c31.955 0 50.553-24.775 55.293-31.994C114.535 56.795 95.854 32 64 32 32.045 32 13.447 56.775 8.707 63.994zM64 88c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm0-40c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16z"
-                      data-original="#000000"
-                    ></path>
-                  </svg>
+                  {isShowConfirmPassword ? (
+                    <FaRegEye
+                      size={20}
+                      className="text-primary cursor-pointer absolute right-2"
+                      onClick={() => togggleShowConfirmPassword()}
+                    ></FaRegEye>
+                  ) : (
+                    <FaRegEyeSlash
+                      size={20}
+                      className="text-slate-400 cursor-pointer absolute right-2"
+                      onClick={() => togggleShowConfirmPassword()}
+                    ></FaRegEyeSlash>
+                  )}
                 </div>
               </div>
+              {confirmPasswordError && (
+                <p className="text-red-500 text-sm pt-2">
+                  {confirmPasswordError}
+                </p>
+              )}
 
-              <div class="flex flex-wrap items-center justify-between gap-4 mt-6">
-                <div class="flex items-center">
-                  <input
-                    id="remember-me"
-                    name="remember-me"
-                    type="checkbox"
-                    class="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                  />
-                  <label
-                    for="remember-me"
-                    class="ml-3 block text-sm text-gray-800"
+              <p class="text-gray-800 text-sm mt-6">
+                Bạn đã có tài khoản?{" "}
+                <Link to="/sign-in">
+                  <a
+                    href="javascript:void(0);"
+                    class="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
                   >
-                    I accept the Terms and Conditions
-                  </label>
-                </div>
-                <div class="flex mt-3">
-                  <div class="mr-3 text-sm text-gray-800">
-                    Already have an account?
-                  </div>
-                  <Link to="/sign-in">
-                    <a
-                      href="jajvascript:void(0);"
-                      class="text-blue-600 text-sm hover:underline"
-                    >
-                      Login here
-                    </a>
-                  </Link>
-                </div>
-              </div>
+                    Đăng nhập tại đây
+                  </a>
+                </Link>
+              </p>
 
-              <div class="mt-12">
-                <button class="w-full py-2.5 overflow-hidden group bg-[#FFBE00] relative hover:bg-gradient-to-r hover:from-[#FFBE00] hover:to-indigo-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-indigo-400 transition-all ease-out duration-300">
+              <div class="mt-8">
+                <button
+                  type="submit"
+                  class="w-full py-2.5 overflow-hidden group bg-[#FFBE00] relative hover:bg-gradient-to-r hover:from-[#FFBE00] hover:to-indigo-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-indigo-400 transition-all ease-out duration-300"
+                >
                   <span class="absolute right-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-                  <span class="relative text-base font-semibold">SIGN UP</span>
+                  <span class="relative text-base font-semibold">ĐĂNG KÝ</span>
                 </button>
               </div>
-              <div class="my-6 flex items-center gap-4">
+              <div class="my-4 flex items-center gap-4">
                 <hr class="w-full border-gray-300" />
-                <p class="text-sm text-gray-800 text-center">or</p>
+                <p class="text-sm text-gray-800 text-center">hoặc</p>
                 <hr class="w-full border-gray-300" />
               </div>
               <button
@@ -204,12 +386,13 @@ function SignUp() {
                     data-original="#eb4132"
                   />
                 </svg>
-                Continue with google
+                Đăng nhập bằng Google
               </button>
             </form>
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
