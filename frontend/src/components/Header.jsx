@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { IoPerson } from "react-icons/io5";
+import { BsPersonCircle } from "react-icons/bs";
 import { FaCartShopping } from "react-icons/fa6";
+import DropdownAvatar from "./DropdownAvatar";
 
 export default function Header() {
   return (
@@ -69,11 +70,12 @@ export default function Header() {
                   </span>
                 </span>
               </li>
-              <Link to="/sign-in">
-                <li className="flex text-[15px] max-lg:py-2 px-3 hover:text-[#007bff] hover:fill-[#007bff]">
-                  <IoPerson className="size-[25px] cursor-pointer"></IoPerson>
-                </li>
-              </Link>
+
+              {/* <li className="flex text-[15px] max-lg:py-2 px-3 hover:text-[#007bff] hover:fill-[#007bff]">
+                  <BsPersonCircle className="size-[25px] cursor-pointer"></BsPersonCircle>
+                </li> */}
+              <DropdownAvatar></DropdownAvatar>
+
               <li id="toggleOpen" className="lg:hidden">
                 <button>
                   <svg

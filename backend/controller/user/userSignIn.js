@@ -27,25 +27,19 @@ async function userSignInController(req, res) {
     console.log("checkPassoword", checkPassword);
 
     if (checkPassword) {
-      const tokenData = {
-        _id: user._id,
-        email: user.email,
-      };
-      const token = await jwt.sign(tokenData, process.env.TOKEN_SECRET_KEY, {
-        expiresIn: 60 * 60 * 8,
-      });
+      const token = jwt.sign({ id: user._id }, process.env.TOKEN_SECRET_KEY);
+      const expireDate = new Date(Date.now() + 3600000);
 
-      const tokenOption = {
-        httpOnly: true,
-        secure: true,
-      };
-
-      res.cookie("token", token, tokenOption).status(200).json({
-        message: "Đăng nhập thành công!!",
-        token: token,
-        success: true,
-        error: false,
-      });
+      res
+        .cookie("access_token", token, { httpOnly: true, expires: expireDate })
+        .status(200)
+        .json({
+          message: "Đăng nhập thành công!!",
+          user: user,
+          token: token,
+          success: true,
+          error: false,
+        });
     } else {
       throw new Error("Please check Password");
     }

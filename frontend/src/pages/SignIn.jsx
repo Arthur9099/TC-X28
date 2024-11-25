@@ -15,6 +15,7 @@ function SignIn() {
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState(null);
   const [passwordError, setPasswordError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
@@ -45,28 +46,21 @@ function SignIn() {
     }
 
     try {
+      setLoading(true);
       const response = await axiosInstance.post("/sign-in", {
         email: email,
         password: password,
       });
       // Handle successfull login response
-      if (response.data.success && response.data.token) {
+      if (response.data.success) {
         localStorage.setItem("token", response.data.token);
         navigate("/");
       } else {
         setPasswordError("Tài khoản hoặc mật khẩu sai");
       }
+      setLoading(false);
     } catch (error) {
-      // Handle Sign Up error
-      if (
-        error.response &&
-        error.response.data &&
-        error.response.data.message
-      ) {
-        setError(error.response.data.message);
-      } else {
-        setError("An unexpected error occurred. Please try again!");
-      }
+      setLoading(false);
     }
   };
   return (
@@ -209,12 +203,26 @@ function SignIn() {
 
               <div class="mt-12">
                 <button
+                  disabled={loading}
                   type="submit"
                   class="w-full py-2.5 overflow-hidden group bg-[#FFBE00] relative hover:bg-gradient-to-r hover:from-[#FFBE00] hover:to-indigo-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-indigo-400 transition-all ease-out duration-300"
                 >
                   <span class="absolute right-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                   <span class="relative text-base font-semibold">
-                    ĐĂNG NHẬP
+                    {loading ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-8 animate-[spin_0.8s_linear_infinite] fill-black block mx-auto"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 22c5.421 0 10-4.579 10-10h-2c0 4.337-3.663 8-8 8s-8-3.663-8-8c0-4.336 3.663-8 8-8V2C6.579 2 2 6.58 2 12c0 5.421 4.579 10 10 10z"
+                          data-original="#000000"
+                        />
+                      </svg>
+                    ) : (
+                      "ĐĂNG NHẬP"
+                    )}
                   </span>
                 </button>
               </div>

@@ -9,6 +9,7 @@ import ShoppingCart from "./pages/ShoppingCart";
 import ProductDetail from "./pages/ProductDetail";
 import ProductCard from "./components/ProductCard";
 import ProductList from "./components/ProductList";
+import SignUpSuccessLoading from "./components/SignUpSuccessLoading";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/sign-in" element={<SignIn></SignIn>}></Route>
         <Route path="/sign-up" element={<SignUp></SignUp>}></Route>
+        <Route
+          path="/sign-up/success/redirect"
+          element={<SignUpSuccessLoading></SignUpSuccessLoading>}
+        ></Route>
         <Route path="/store" element={<Store></Store>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/about-us" element={<About></About>}></Route>
