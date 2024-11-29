@@ -10,6 +10,9 @@ import ProductDetail from "./pages/ProductDetail";
 import ProductCard from "./components/ProductCard";
 import ProductList from "./components/ProductList";
 import SignUpSuccessLoading from "./components/SignUpSuccessLoading";
+import Profile from "./pages/Profile";
+import PrivateRoute from "./components/PrivateRoute";
+import AddProductForm from "./components/product/AddProductForm";
 
 function App() {
   return (
@@ -33,6 +36,27 @@ function App() {
           path="/product-detail"
           element={<ProductDetail></ProductDetail>}
         ></Route>
+        <Route element={<PrivateRoute></PrivateRoute>}>
+          <Route path="/profile/info" element={<Profile></Profile>}></Route>
+          <Route path="/profile/orders" element={<Profile></Profile>}></Route>
+          <Route
+            path="/profile/voucher-wallet"
+            element={<Profile></Profile>}
+          ></Route>
+          <Route
+            path="/profile/user-address"
+            element={<Profile></Profile>}
+          ></Route>
+          <Route path="/profile/reviews" element={<Profile></Profile>}></Route>
+          <Route path="/profile/faq" element={<Profile></Profile>}></Route>
+        </Route>
+
+        {/* Add product test */}
+        <Route
+          path="/add-product"
+          element={<AddProductForm></AddProductForm>}
+        ></Route>
+        {/* ------ */}
       </Routes>
     </BrowserRouter>
   );

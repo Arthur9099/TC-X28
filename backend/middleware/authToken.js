@@ -1,38 +1,21 @@
 const jwt = require("jsonwebtoken");
+const dotenv = require("dotenv");
+const errorHandler = require("../middleware/error.js");
+
+dotenv.config();
 
 async function authToken(req, res, next) {
-  try {
-    const token = req.cookies?.token;
+  const token = req.cookies.access_token;
+  console.log(token);
 
-    console.log("token", token);
-    if (!token) {
-      return res.status(200).json({
-        message: "Please Login...!",
-        error: true,
-        success: false,
-      });
-    }
+  if (!token) return next(errorHandler(401, "You are not authenticated!"));
 
-    jwt.verify(token, process.env.TOKEN_SECRET_KEY, function (err, decoded) {
-      console.log(err);
-      console.log("decoded", decoded);
+  jwt.verify(token, process.env.TOKEN_SECRET_KEY, (err, user) => {
+    if (err) return next(errorHandler(403, "Token is not valid!"));
 
-      if (err) {
-        console.log("error auth", err);
-      }
-
-      req.userId = decoded?._id;
-
-      next();
-    });
-  } catch (err) {
-    res.status(400).json({
-      message: err.message || err,
-      data: [],
-      error: true,
-      success: false,
-    });
-  }
+    req.user = user;
+    next();
+  });
 }
 
 module.exports = authToken;

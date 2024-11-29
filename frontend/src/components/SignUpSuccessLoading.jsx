@@ -10,16 +10,16 @@ function SignUpSuccessLoading() {
         if (time === 0) {
           navigate("/sign-in");
           return 0;
-        } else return time - 0.5;
+        } else return time - 1;
       });
     }, 1000);
   }, []);
   return (
-    <div class="fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto font-roboto">
-      <div class="w-full max-w-lg bg-white shadow-lg rounded-lg p-6 relative">
+    <div className="fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto font-roboto">
+      <div className="w-full max-w-lg bg-white shadow-lg rounded-lg p-6 relative">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-3.5 cursor-pointer shrink-0 fill-gray-400 hover:fill-red-500 float-right"
+          className="w-3.5 cursor-pointer shrink-0 fill-gray-400 hover:fill-red-500 float-right"
           viewBox="0 0 320.591 320.591"
         >
           <path
@@ -32,10 +32,10 @@ function SignUpSuccessLoading() {
           ></path>
         </svg>
 
-        <div class="my-8 text-center">
+        <div className="my-8 text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-14 shrink-0 fill-green-500 inline"
+            className="w-14 shrink-0 fill-green-500 inline"
             viewBox="0 0 512 512"
           >
             <path
@@ -47,10 +47,10 @@ function SignUpSuccessLoading() {
               data-original="#000000"
             />
           </svg>
-          <h4 class="text-xl text-gray-800 font-semibold mt-4">
+          <h4 className="text-xl text-gray-800 font-semibold mt-4">
             Đăng ký thành công!
           </h4>
-          <p class="text-sm text-gray-500 leading-relaxed mt-4">
+          <p className="text-sm text-gray-500 leading-relaxed mt-4">
             Tự động chuyển hướng trong:{" "}
             {`${Math.floor(time / 60)}`.padStart(2, 0)}:
             {`${time % 60}`.padStart(2, 0)} hoặc nhấn nút bên dưới để đến trang
@@ -60,7 +60,7 @@ function SignUpSuccessLoading() {
         <Link to="/sign-in">
           <button
             type="button"
-            class="px-5 py-2.5 w-full rounded-lg text-white text-sm border-none outline-none bg-gray-800 hover:bg-gray-700"
+            className="px-5 py-2.5 w-full rounded-lg text-white text-sm border-none outline-none bg-gray-800 hover:bg-gray-700"
           >
             ĐĂNG NHẬP
           </button>

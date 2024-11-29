@@ -2,25 +2,25 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer class="font-sans tracking-wide bg-[#27282b] py-12 px-16">
-      <div class="grid max-md-grid-cols-1 lg:grid-cols-2 gap-20">
+    <footer className="font-sans tracking-wide bg-[#27282b] py-12 px-16">
+      <div className="grid max-md-grid-cols-1 lg:grid-cols-2 gap-20">
         <div>
-          <h4 class="text-gray-100 font-bold text-lg">About Us</h4>
-          <p class="text-sm mt-6 text-gray-300">
+          <h4 className="text-gray-100 font-bold text-lg">About Us</h4>
+          <p className="text-sm mt-6 text-gray-300">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             gravida, mi eu pulvinar cursus, sem elit interdum mauris dipiscing
             elit. Aenean gravida, mi eu pulvinar cursus...{" "}
             <a
               href="javascript:void(0)"
-              class="text-sm font-semibold text-[#007bff]"
+              className="text-sm font-semibold text-[#007bff]"
             >
               Read more
             </a>
           </p>
 
-          <ul class="grid sm:grid-cols-2 mt-12 gap-2">
-            <li class="flex items-center max-sm:mb-8">
-              <div class="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+          <ul className="grid sm:grid-cols-2 mt-12 gap-2">
+            <li className="flex items-center max-sm:mb-8">
+              <div className="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20px"
@@ -34,13 +34,16 @@ export default function Footer() {
                   />
                 </svg>
               </div>
-              <a href="javascript:void(0)" class="text-gray-100 text-sm ml-4">
-                <small class="block">Tel</small>
+              <a
+                href="javascript:void(0)"
+                className="text-gray-100 text-sm ml-4"
+              >
+                <small className="block">Tel</small>
                 <strong>180-548-2588</strong>
               </a>
             </li>
-            <li class="flex items-center">
-              <div class="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+            <li className="flex items-center">
+              <div className="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20px"
@@ -54,8 +57,11 @@ export default function Footer() {
                   />
                 </svg>
               </div>
-              <a href="javascript:void(0)" class="text-gray-100 text-sm ml-4">
-                <small class="block">Mail</small>
+              <a
+                href="javascript:void(0)"
+                className="text-gray-100 text-sm ml-4"
+              >
+                <small className="block">Mail</small>
                 <strong>info@example.com</strong>
               </a>
             </li>
@@ -63,29 +69,29 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 class="text-gray-100 font-bold text-lg">Newsletter</h4>
-          <p class="text-sm mt-6 text-gray-300">
+          <h4 className="text-gray-100 font-bold text-lg">Newsletter</h4>
+          <p className="text-sm mt-6 text-gray-300">
             Subscribe to our newsletter and stay up to date with the latest
             news, updates, and exclusive offers. Get valuable insights. Join our
             community today!
           </p>
 
-          <div class="bg-[#343538] flex px-2 py-1 rounded-full mt-12">
+          <div className="bg-[#343538] flex px-2 py-1 rounded-full mt-12">
             <input
               type="email"
               placeholder="Enter your email"
-              class="w-full outline-none text-gray-300 text-sm bg-transparent pl-4"
+              className="w-full outline-none text-gray-300 text-sm bg-transparent pl-4"
             />
             <button
               type="button"
-              class="bg-gray-100 hover:bg-white transition-all text-gray-600 font-semibold text-sm rounded-full px-5 py-2 ml-4"
+              className="bg-gray-100 hover:bg-white transition-all text-gray-600 font-semibold text-sm rounded-full px-5 py-2 ml-4"
             >
               Submit
             </button>
           </div>
 
-          <ul class="flex items-center justify-end mt-8 space-x-4">
-            <li class="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+          <ul className="flex items-center justify-end mt-8 space-x-4">
+            <li className="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
               <a href="javascript:void(0)">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +107,7 @@ export default function Footer() {
                 </svg>
               </a>
             </li>
-            <li class="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+            <li className="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
               <a href="javascript:void(0)">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +123,7 @@ export default function Footer() {
                 </svg>
               </a>
             </li>
-            <li class="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+            <li className="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
               <a href="javascript:void(0)">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +159,7 @@ export default function Footer() {
                 </svg>
               </a>
             </li>
-            <li class="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+            <li className="bg-[#343538] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
               <a href="javascript:void(0)">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -170,12 +176,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div class="lg:flex lg:item-center mt-12">
-        <ul class="flex flex-wrap gap-4">
+      <div className="lg:flex lg:item-center mt-12">
+        <ul className="flex flex-wrap gap-4">
           <li>
             <a
               href="javascript:void(0)"
-              class="text-gray-300 hover:text-gray-100 text-sm"
+              className="text-gray-300 hover:text-gray-100 text-sm"
             >
               Terms of Service
             </a>
@@ -183,7 +189,7 @@ export default function Footer() {
           <li>
             <a
               href="javascript:void(0)"
-              class="text-gray-300 hover:text-gray-100 text-sm"
+              className="text-gray-300 hover:text-gray-100 text-sm"
             >
               Privacy Policy
             </a>
@@ -191,14 +197,14 @@ export default function Footer() {
           <li>
             <a
               href="javascript:void(0)"
-              class="text-gray-300 hover:text-gray-100 text-sm"
+              className="text-gray-300 hover:text-gray-100 text-sm"
             >
               Security
             </a>
           </li>
         </ul>
 
-        <p class="text-sm text-gray-300 lg:ml-auto max-lg:mt-6">
+        <p className="text-sm text-gray-300 lg:ml-auto max-lg:mt-6">
           © TC - X28. Ecommerce Project.
         </p>
       </div>

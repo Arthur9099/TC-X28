@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { BsPersonCircle } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { signOut } from "../redux/user/userSlice";
 
 const DropdownAvatar = () => {
   return (
@@ -54,41 +57,74 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
 };
 
 const PricingContent = () => {
-  return (
-    <div className="w-64 bg-white p-6 shadow-2xl rounded-lg font-roboto">
-      {/* <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">For Individuals</h3>
-        <a href="#" className="block text-sm hover:underline">
-          Introduction
-        </a>
-        <a href="#" className="block text-sm hover:underline">
-          Pay as you go
-        </a>
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleSignOut = async () => {
+    try {
+      await fetch("http://localhost:8080/sign-out", {
+        method: "GET",
+        credentials: "include",
+      });
+      dispatch(signOut());
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const { currentUser } = useSelector((state) => state.user);
+  if (!currentUser) {
+    return (
+      <div className="w-64 bg-white p-6 shadow-2xl rounded-lg font-roboto">
+        <Link to="/sign-in">
+          <button className="w-full mb-2 rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white cursor-pointer">
+            Đăng nhập
+          </button>
+        </Link>
+        <Link to="/sign-up">
+          <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white cursor-pointer">
+            Đăng ký
+          </button>
+        </Link>
       </div>
-      <div className="mb-6 space-y-3">
-        <h3 className="font-semibold">For Companies</h3>
-        <a href="#" className="block text-sm hover:underline">
-          Startups
-        </a>
-        <a href="#" className="block text-sm hover:underline">
-          SMBs
-        </a>
-        <a href="#" className="block text-sm hover:underline">
-          Enterprise
-        </a>
-      </div> */}
-      <Link to="/sign-in">
-        <button className="w-full mb-2 rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white cursor-pointer">
-          Đăng nhập
+    );
+  } else {
+    return (
+      <div className="w-64 bg-white p-6 shadow-2xl rounded-lg font-roboto font-semibold">
+        <div className="mb-5 space-y-4 text-center">
+          <Link
+            to="/profile/voucher-wallet"
+            className="block text-sm hover:underline"
+          >
+            Ví Voucher
+          </Link>
+          <Link to="/profile/orders" className="block text-sm hover:underline">
+            Lịch sử đơn hàng
+          </Link>
+          <Link
+            to="/profile/user-address"
+            className="block text-sm hover:underline"
+          >
+            Sổ địa chỉ
+          </Link>
+          <Link to="/profile/info" className="block text-sm hover:underline">
+            Cài đặt tài khoản
+          </Link>
+          <Link to="/profile/reviews" className="block text-sm hover:underline">
+            Đánh giá và phản hồi
+          </Link>
+          <Link to="/profile/faq" className="block text-sm hover:underline">
+            FAQ & Chính sách
+          </Link>
+        </div>
+        <button
+          onClick={handleSignOut}
+          className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white cursor-pointer"
+        >
+          Đăng xuất
         </button>
-      </Link>
-      <Link to="/sign-up">
-        <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white cursor-pointer">
-          Đăng ký
-        </button>
-      </Link>
-    </div>
-  );
+      </div>
+    );
+  }
 };
 
 export default DropdownAvatar;

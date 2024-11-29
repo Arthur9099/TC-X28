@@ -1,6 +1,6 @@
 async function userLogout(req, res) {
   try {
-    res.clearCookie("token");
+    res.clearCookie("access_token");
 
     res.json({
       message: "Đăng xuất thành công!!",

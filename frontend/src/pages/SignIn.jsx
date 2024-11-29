@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { validateEmail } from "../utils/helper";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
-import axiosInstance from "../utils/axiosInstance";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import OAuth from "../components/OAuth";
+import {
+  signInStart,
+  signInSuccess,
+  signInFailure,
+} from "../redux/user/userSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 function SignIn() {
   const [isShowPassword, setIsShowPassword] = useState(false);
@@ -15,9 +21,10 @@ function SignIn() {
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState(null);
   const [passwordError, setPasswordError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const { loading, error } = useSelector((state) => state.user);
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleSignIn = async (e) => {
     e.preventDefault();
@@ -46,46 +53,57 @@ function SignIn() {
     }
 
     try {
-      setLoading(true);
-      const response = await axiosInstance.post("/sign-in", {
-        email: email,
-        password: password,
+      dispatch(signInStart());
+      const res = await fetch("http://localhost:8080/sign-in", {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email, password: password }),
       });
-      // Handle successfull login response
-      if (response.data.success) {
-        localStorage.setItem("token", response.data.token);
-        navigate("/");
-      } else {
+      const data = await res.json();
+      console.log(data);
+
+      if (data.success === false) {
         setPasswordError("Tài khoản hoặc mật khẩu sai");
+        dispatch(signInFailure(data));
+        return;
       }
-      setLoading(false);
+      dispatch(signInSuccess(data));
+      navigate("/");
     } catch (error) {
-      setLoading(false);
+      dispatch(signInFailure(error));
     }
   };
   return (
     <div>
       <Header></Header>
       <div>
-        <div class="font-roboto">
-          <div class="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-4">
-            <div class="max-md:order-1 h-screen min-h-full max-sm:hidden">
+        <div className="font-roboto">
+          <div className="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-4">
+            <div className="max-md:order-1 h-screen min-h-full max-sm:hidden">
               <img
                 src="/images/headset.jpg"
-                class="w-full h-full object-cover"
+                className="w-full h-full object-cover"
                 alt="login-image"
               />
             </div>
 
-            <form class="max-w-xl w-full p-6 mx-auto" onSubmit={handleSignIn}>
-              <div class="mb-12">
-                <h3 class="text-gray-800 text-4xl font-extrabold">Đăng nhập</h3>
-                <p class="text-gray-800 text-sm mt-6">
+            <form
+              className="max-w-xl w-full p-6 mx-auto"
+              onSubmit={handleSignIn}
+            >
+              <div className="mb-12">
+                <h3 className="text-gray-800 text-4xl font-extrabold">
+                  Đăng nhập
+                </h3>
+                <p className="text-gray-800 text-sm mt-6">
                   Bạn chưa có tài khoản?{" "}
                   <Link to="/sign-up">
                     <a
                       href="javascript:void(0);"
-                      class="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
+                      className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
                     >
                       Đăng ký tại đây
                     </a>
@@ -94,14 +112,16 @@ function SignIn() {
               </div>
 
               <div>
-                <label class="text-gray-800 text-sm block mb-2">Email</label>
-                <div class="relative flex items-center">
+                <label className="text-gray-800 text-sm block mb-2">
+                  Email
+                </label>
+                <div className="relative flex items-center">
                   <input
                     id="emailInput"
                     name="email"
                     type="text"
                     value={email}
-                    class="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
+                    className="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
                     placeholder="Email của bạn"
                     onChange={(e) => {
                       setEmail(e.target.value);
@@ -111,7 +131,7 @@ function SignIn() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 682.667 682.667"
                   >
                     <defs>
@@ -144,14 +164,16 @@ function SignIn() {
               {emailError && (
                 <p className="text-red-500 text-sm pt-2">{emailError}</p>
               )}
-              <div class="mt-8">
-                <label class="text-gray-800 text-sm block mb-2">Mật khẩu</label>
-                <div class="relative flex items-center">
+              <div className="mt-8">
+                <label className="text-gray-800 text-sm block mb-2">
+                  Mật khẩu
+                </label>
+                <div className="relative flex items-center">
                   <input
                     id="passwordInput"
                     name="password"
                     type={isShowPassword ? "text" : "password"}
-                    class="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
+                    className="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
                     placeholder="Mật khẩu của bạn"
                     value={password}
                     onChange={(e) => {
@@ -176,17 +198,17 @@ function SignIn() {
               {passwordError && (
                 <p className="text-red-500 text-sm pt-2">{passwordError}</p>
               )}
-              <div class="flex flex-wrap items-center justify-between gap-4 mt-6">
-                <div class="flex items-center">
+              <div className="flex flex-wrap items-center justify-between gap-4 mt-6">
+                <div className="flex items-center">
                   <input
                     id="remember-me"
                     name="remember-me"
                     type="checkbox"
-                    class="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                    className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                   />
                   <label
                     for="remember-me"
-                    class="ml-3 block text-sm text-gray-800"
+                    className="ml-3 block text-sm text-gray-800"
                   >
                     Lưu thông tin đăng nhập
                   </label>
@@ -194,25 +216,25 @@ function SignIn() {
                 <div>
                   <a
                     href="jajvascript:void(0);"
-                    class="text-blue-600 font-semibold text-sm hover:underline"
+                    className="text-blue-600 font-semibold text-sm hover:underline"
                   >
                     Quên mật khẩu?
                   </a>
                 </div>
               </div>
 
-              <div class="mt-12">
+              <div className="mt-12">
                 <button
                   disabled={loading}
                   type="submit"
-                  class="w-full py-2.5 overflow-hidden group bg-[#FFBE00] relative hover:bg-gradient-to-r hover:from-[#FFBE00] hover:to-indigo-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-indigo-400 transition-all ease-out duration-300"
+                  className="w-full py-2.5 overflow-hidden group bg-[#FFBE00] relative hover:bg-gradient-to-r hover:from-[#FFBE00] hover:to-indigo-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-indigo-400 transition-all ease-out duration-300"
                 >
-                  <span class="absolute right-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-                  <span class="relative text-base font-semibold">
+                  <span className="absolute right-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                  <span className="relative text-base font-semibold">
                     {loading ? (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-8 animate-[spin_0.8s_linear_infinite] fill-black block mx-auto"
+                        className="w-8 animate-[spin_0.8s_linear_infinite] fill-black block mx-auto"
                         viewBox="0 0 24 24"
                       >
                         <path
@@ -226,19 +248,19 @@ function SignIn() {
                   </span>
                 </button>
               </div>
-              <div class="my-6 flex items-center gap-4">
-                <hr class="w-full border-gray-300" />
-                <p class="text-sm text-gray-800 text-center">hoặc</p>
-                <hr class="w-full border-gray-300" />
+              <div className="my-6 flex items-center gap-4">
+                <hr className="w-full border-gray-300" />
+                <p className="text-sm text-gray-800 text-center">hoặc</p>
+                <hr className="w-full border-gray-300" />
               </div>
-              <button
+              {/* <button
                 type="button"
-                class="w-full flex items-center justify-center gap-4 py-2.5 px-4 text-sm tracking-wide text-gray-800 border border-gray-300 rounded-md bg-transparent hover:bg-gray-50 focus:outline-none"
+                className="w-full flex items-center justify-center gap-4 py-2.5 px-4 text-sm tracking-wide text-gray-800 border border-gray-300 rounded-md bg-transparent hover:bg-gray-50 focus:outline-none"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20px"
-                  class="inline"
+                  className="inline"
                   viewBox="0 0 512 512"
                 >
                   <path
@@ -273,7 +295,8 @@ function SignIn() {
                   />
                 </svg>
                 Đăng nhập bằng Google
-              </button>
+              </button> */}
+              <OAuth></OAuth>
             </form>
           </div>
         </div>

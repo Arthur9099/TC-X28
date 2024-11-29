@@ -131,33 +131,51 @@ export default function Header() {
               />
             </a>
           </li>
-          <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
-            LAPTOP
-          </button>
-          <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
-            PC GAMING
-          </button>
-          <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
-            MAIN, CPU, VGA
-          </button>
-          <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
-            CASE, NGUỒN, TẢN NHIỆT
-          </button>
-          <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
-            Ổ CỨNG, RAM, THẺ NHỚ
-          </button>
-          <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
-            MÀN HÌNH
-          </button>
-          <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
-            BÀN PHÍM
-          </button>
-          <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
-            CHUỘT, LÓT CHUỘT
-          </button>
-          <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
-            TAI NGHE
-          </button>
+          <Link to="/store">
+            <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
+              LAPTOP
+            </button>
+          </Link>
+          <Link to="/store">
+            <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
+              PC GAMING
+            </button>
+          </Link>
+          <Link to="/store">
+            <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
+              MAIN, CPU, VGA
+            </button>
+          </Link>
+          <Link to="/store">
+            <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
+              CASE, NGUỒN, TẢN NHIỆT
+            </button>
+          </Link>
+          <Link to="/store">
+            <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
+              Ổ CỨNG, RAM, THẺ NHỚ
+            </button>
+          </Link>
+          <Link to="/store">
+            <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
+              MÀN HÌNH
+            </button>
+          </Link>
+          <Link to="/store">
+            <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
+              BÀN PHÍM
+            </button>
+          </Link>
+          <Link to="/store">
+            <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
+              CHUỘT, LÓT CHUỘT
+            </button>
+          </Link>
+          <Link to="/store">
+            <button className="max-lg:border-b px-5 text-white text-[16px] font-medium block hover:bg-gray-700 py-5">
+              TAI NGHE
+            </button>
+          </Link>
         </ul>
       </div>
     </header>

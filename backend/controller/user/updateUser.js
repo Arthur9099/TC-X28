@@ -1,40 +1,28 @@
-const userModel = require("../../models/userModel")
+const UserModel = require("../../models/userModel.js");
+const errorHandler = require("../../middleware/error.js");
 
-async function updateUser(req,res){
-    try{
-        const sessionUser = req.userId
+async function updateUser(req, res, next) {
+  if (req.user.id !== req.params.id) {
+    return next(errorHandler(401, "You can update only your account!"));
+  }
+  try {
+    const updatedUser = await UserModel.findByIdAndUpdate(
+      req.params.id,
+      {
+        $set: {
+          userName: req.body.userName,
+          phoneNumber: req.body.phoneNumber,
+          gender: req.body.gender,
+          dateOfBirth: req.body.dateOfBirth,
+        },
+      },
+      { new: true }
+    );
 
-        const { userId , email, name, role} = req.body
-
-        const payload = {
-            ...( email && { email : email}),
-            ...( name && { name : name}),
-            ...( role && { role : role}),
-        }
-
-        const user = await userModel.findById(sessionUser)
-
-        console.log("user.role",user.role)
-
-
-
-        const updateUser = await userModel.findByIdAndUpdate(userId,payload)
-
-        
-        res.json({
-            data : updateUser,
-            message : "User Updated",
-            success : true,
-            error : false
-        })
-    }catch(err){
-        res.status(400).json({
-            message : err.message || err,
-            error : true,
-            success : false
-        })
-    }
+    res.status(200).json(updatedUser);
+  } catch (error) {
+    next(error);
+  }
 }
 
-
-module.exports = updateUser
+module.exports = updateUser;

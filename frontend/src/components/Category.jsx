@@ -3,18 +3,18 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Category() {
   return (
-    <div class="max-w-6xl mx-auto font-roboto mt-[100px]">
-      <h2 class="text-black text-[28px] font-semibold text-center mb-16">
+    <div className="max-w-6xl mx-auto font-roboto mt-[100px]">
+      <h2 className="text-black text-[28px] font-semibold text-center mb-16">
         DANH MỤC SẢN PHẨM
       </h2>
 
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 max-md:max-w-lg mx-auto gap-12">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 max-md:max-w-lg mx-auto gap-12">
         <Link to="/store">
-          <div class="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              class="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
+              className="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
               viewBox="0 0 32 32"
             >
               <path
@@ -27,8 +27,8 @@ function Category() {
               />
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">Pc</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 className="text-gray-800 text-xl font-semibold mb-3">Pc</h3>
+              <p className="text-gray-600 text-sm">
                 Tailor our product to suit your needs Expand your reach with our
                 global network.
               </p>
@@ -37,11 +37,11 @@ function Category() {
         </Link>
 
         <Link to="/store">
-          <div class="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              class="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
+              className="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
               viewBox="0 0 682.667 682.667"
             >
               <defs>
@@ -70,8 +70,10 @@ function Category() {
               </g>
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">Laptop</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 className="text-gray-800 text-xl font-semibold mb-3">
+                Laptop
+              </h3>
+              <p className="text-gray-600 text-sm">
                 Your data is protected by the latest security measures.
               </p>
             </div>
@@ -79,11 +81,11 @@ function Category() {
         </Link>
 
         <Link to="/store">
-          <div class="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              class="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
+              className="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
               viewBox="0 0 512.001 512.001"
             >
               <path
@@ -92,8 +94,10 @@ function Category() {
               />
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">Màn hình</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 className="text-gray-800 text-xl font-semibold mb-3">
+                Màn hình
+              </h3>
+              <p className="text-gray-600 text-sm">
                 Tailor our product to suit your needs 24/7 customer support for
                 all your inquiries.
               </p>
@@ -102,11 +106,11 @@ function Category() {
         </Link>
 
         <Link to="/store">
-          <div class="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              class="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
+              className="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
               viewBox="0 0 24 24"
             >
               <g fill-rule="evenodd" clip-rule="evenodd">
@@ -125,10 +129,10 @@ function Category() {
               </g>
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">
+              <h3 className="text-gray-800 text-xl font-semibold mb-3">
                 Chuột và lót chuột
               </h3>
-              <p class="text-gray-600 text-sm">
+              <p className="text-gray-600 text-sm">
                 Experience blazing-fast performance with our product.
               </p>
             </div>
@@ -136,11 +140,11 @@ function Category() {
         </Link>
 
         <Link to="/store">
-          <div class="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              class="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
+              className="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
               viewBox="0 0 504.69 504.69"
             >
               <path
@@ -173,8 +177,10 @@ function Category() {
               />
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">Tai nghe</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 className="text-gray-800 text-xl font-semibold mb-3">
+                Tai nghe
+              </h3>
+              <p className="text-gray-600 text-sm">
                 Tailor our product to suit your needs Expand your reach with our
                 global network.
               </p>
@@ -183,11 +189,11 @@ function Category() {
         </Link>
 
         <Link to="/store">
-          <div class="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="p-4 flex gap-6 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              class="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
+              className="w-12 h-12 bg-blue-100 p-3 rounded-lg shrink-0"
               viewBox="0 0 682.667 682.667"
             >
               <defs>
@@ -210,10 +216,10 @@ function Category() {
               </g>
             </svg>
             <div>
-              <h3 class="text-gray-800 text-xl font-semibold mb-3">
+              <h3 className="text-gray-800 text-xl font-semibold mb-3">
                 Card màn hình
               </h3>
-              <p class="text-gray-600 text-sm">
+              <p className="text-gray-600 text-sm">
                 Tailor our product to suit your needs Seamless communication for
                 your team.
               </p>
