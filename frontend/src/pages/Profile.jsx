@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { useSelector } from "react-redux";
-import { Link, useMatch } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useMatch, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import InfoModal from "../components/InfoModal";
+import { signOut } from "../redux/user/userSlice";
 
 function Profile() {
   return (
@@ -25,6 +26,21 @@ function ProfileSideBar() {
   const profileUserAddress = useMatch("/profile/user-address");
   const profileReviews = useMatch("profile/reviews");
   const profileFaq = useMatch("/profile/faq");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleSignOut = async () => {
+    try {
+      await fetch("http://localhost:8080/sign-out", {
+        method: "GET",
+        credentials: "include",
+      });
+      dispatch(signOut());
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <nav
@@ -207,7 +223,7 @@ function ProfileSideBar() {
               <span>Chính sách & Câu hỏi thường gặp</span>
             </Link>
           </li>
-          <li>
+          <li onClick={handleSignOut}>
             <a
               href="javascript:void(0)"
               className="text-black text-base flex items-center hover:text-[#007bff] hover:border-r-[5px] border-[#077bff] hover:bg-gray-100 px-8 py-4 transition-all"
