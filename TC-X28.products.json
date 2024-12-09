@@ -1,0 +1,735 @@
+[{
+  "_id": {
+    "$oid": "67563445840c71eeb6a185dd"
+  },
+  "productName": "Tai nghe Razer Kraken V4 X USB",
+  "productPrice": 2990000,
+  "productSalePrice": 2630000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Tai Nghe Gaming Razer Kraken V4 X là một lựa chọn hoàn hảo cho game thủ tìm kiếm sự kết hợp giữa âm thanh tuyệt vời, sự thoải mái khi đeo và thiết kế đẹp mắt. Với trọng lượng siêu nhẹ chỉ 250g, Tai Nghe Gaming Razer Kraken V4 X mang đến cảm giác thoải mái ngay cả khi sử dụng trong thời gian dài.",
+  "productCategory": "tai-nghe",
+  "productBrand": "razer",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733702684/TC-X28/h32xtg3icphzzpt6cctq.webp",
+  "createdAt": {
+    "$date": "2024-12-09T00:05:25.517Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:05:25.517Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67563500840c71eeb6a185e6"
+  },
+  "productName": "Tai nghe Gaming Cooler Master CH331 USB",
+  "productPrice": 990000,
+  "productSalePrice": 790000,
+  "productTotalStock": 5,
+  "productAverageReview": 0,
+  "productDescription": "Tai nghe chơi game USB CH331 mang đến trải nghiệm âm thanh thiết yếu và tinh tế cho tất cả game thủ. Khung nhôm chắc chắn mang lại độ bền và phong cách tinh tế được gắn vào đệm tai tiện dụng để mang lại sự thoải mái cả ngày. Loa 50mm mạnh mẽ được điều chỉnh chính xác để tạo ra âm thanh vòm ảo 7.1 mang đến âm thanh sống động -- trong khi cần mic có thể tháo rời đa hướng giúp liên lạc thuận tiện với khả năng giảm tiếng ồn và cải thiện độ rõ nét. Điều khiển nội tuyến cho phép bạn điều chỉnh cài đặt ngay từ cáp chống đứt, chống rối. Và nếu điều đó vẫn chưa đủ thì đó là tính năng plug-and-play để tương thích ngay lập tức. Bền bỉ, thoải mái và đắm chìm, CH331 mang đến cho bạn mọi thứ bạn cần và không có gì bạn không có.",
+  "productCategory": "tai-nghe",
+  "productBrand": "consair",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733702864/TC-X28/smtvbuo2zlfrc5m4infq.webp",
+  "createdAt": {
+    "$date": "2024-12-09T00:08:32.398Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:08:32.398Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67563734840c71eeb6a185ee"
+  },
+  "productName": "Tai nghe SteelSeries Arctis Nova 5 Black",
+  "productPrice": 4290000,
+  "productSalePrice": 3490000,
+  "productTotalStock": 3,
+  "productAverageReview": 0,
+  "productDescription": "SteelSeries – nhà sản xuất dòng tai nghe Arctis đã giành được nhiều giải thưởng trong ngành công nghiệp game. Dòng tai nghe Arctis nổi tiếng với chất lượng âm thanh xuất sắc, thiết kế thoải mái và tính năng đa dạng, được các game thủ và chuyên gia đánh giá cao, nổi bật trong số đó phải kể đến tai nghe SteelSeries Arctis Nova 5 Wireless. Nova 5 Wireless và ứng dụng đồng hành Nova 5 là sự lựa chọn lý tưởng cho các game thủ yêu cầu âm thanh chất lượng cao, kết nối đa nền tảng, khả năng tùy chỉnh linh hoạt cùng thời lượng pin ấn tượng.",
+  "productCategory": "tai-nghe",
+  "productBrand": "steelseries",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733703418/TC-X28/qxqlywad8rln4ny9c9o8.webp",
+  "createdAt": {
+    "$date": "2024-12-09T00:17:56.047Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:17:56.047Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675637ae840c71eeb6a185f4"
+  },
+  "productName": "Tai nghe Asus ROG Cetra II Core",
+  "productPrice": 1290000,
+  "productSalePrice": 890000,
+  "productTotalStock": 2,
+  "productAverageReview": 0,
+  "productDescription": "Tai nghe máy tính Asus ROG Cetra II Core có trình điều khiển ASUS Essence được làm từ cao su silicone lỏng (LSR) mang đến chất lượng âm thanh trên cả tuyệt vời. ",
+  "productCategory": "tai-nghe",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733703560/TC-X28/eydum7kp7lfatjpnyieb.webp",
+  "createdAt": {
+    "$date": "2024-12-09T00:19:58.686Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:19:58.686Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756380c840c71eeb6a185f9"
+  },
+  "productName": "Tai nghe Asus ROG Cetra True Wireless",
+  "productPrice": 2290000,
+  "productSalePrice": 2090000,
+  "productTotalStock": 5,
+  "productAverageReview": 0,
+  "productDescription": "Tai nghe Asus ROG Cetra True Wireless là kiểu tai nghe in-ear mới vừa ra mắt của nhà Asus. Không giống như những dòng tai nghe true wireless khác trên thị trường, thiết kế bắt mắt và chất lượng âm thanh tuyệt hảo đã khiến Asus ROG Cetra nổi bật hơn cả. Game, vui chơi, giải trí,...tất cả mọi nhu cầu của bạn đều được đáp ứng.",
+  "productCategory": "tai-nghe",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733703653/TC-X28/r5depexqgbet9uoxs8pt.jpg",
+  "createdAt": {
+    "$date": "2024-12-09T00:21:32.493Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:21:32.493Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675638f1840c71eeb6a1860c"
+  },
+  "productName": "PC GVN Intel i3-12100F/ VGA GTX 1650",
+  "productPrice": 10130000,
+  "productSalePrice": 9990000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Mainboard ASUS PRIME H610M-CS D4 sẽ là cầu nối tất cả linh kiện trong chiếc PC GVN Intel i3-12100F/ VGA GTX 1650. Là chiếc bo mạch chủ giá rẻ sở hữu socket LGA 1700 cho khả năng tương thích tốt với nhiều bộ vi xử lý hiện nay như Intel Gen 12, Gen 13 và tận dụng tối đa sức mạnh cho hiệu năng xử lý tốt nhất.",
+  "productCategory": "pc-gaming",
+  "productBrand": "intel",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733703857/TC-X28/cdxp0rnslp1jfewwywxu.webp",
+  "createdAt": {
+    "$date": "2024-12-09T00:25:21.760Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:25:21.760Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756396f840c71eeb6a1860f"
+  },
+  "productName": "PC GVN Intel i3-12100F/ VGA RTX 3050",
+  "productPrice": 12520000,
+  "productSalePrice": 11790000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Đầu tư vào một bộ PC đúng cách luôn là vấn đề nan giải đối với dân công nghệ nói chung và game thủ nói riêng. Bởi vì nếu không tìm hiểu hoặc được tư vấn kỹ lưỡng, các bạn sẽ rất dễ bỏ tiền ra mua những linh kiện không thật sự phù hợp với nhu cầu sử dụng, hoặc thậm chí máy tính không hoạt động tốt như mong muốn so với số tiền bỏ ra.",
+  "productCategory": "pc-gaming",
+  "productBrand": "intel",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733703992/TC-X28/gujbofekjnrxo9h1tsn6.png",
+  "createdAt": {
+    "$date": "2024-12-09T00:27:27.780Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:27:27.780Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675639d8840c71eeb6a18612"
+  },
+  "productName": "PC GVN Intel i3-12100F/ VGA GT 1030",
+  "productPrice": 9500000,
+  "productSalePrice": 8390000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Mainboard GIGABYTE H610M-H V2 (DDR4) sẽ là cầu nối tất cả linh kiện trong chiếc PC GVN Intel i3-12100F/ VGA GT 1030. Là chiếc bo mạch chủ giá rẻ sở hữu socket LGA 1700 cho khả năng tương thích tốt với nhiều bộ vi xử lý hiện nay như Intel Gen 12,13 và tận dụng tối đa sức mạnh cho hiệu năng xử lý tốt nhất.",
+  "productCategory": "pc-gaming",
+  "productBrand": "intel",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733704117/TC-X28/ojitlmpeyvmddyjw3ktx.webp",
+  "createdAt": {
+    "$date": "2024-12-09T00:29:12.795Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:29:12.795Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67563a16840c71eeb6a18615"
+  },
+  "productName": "PC GVN Homework i3 12100",
+  "productPrice": 7300000,
+  "productSalePrice": 6900000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Để tối ưu hóa sức mạnh của GVN Homework I3 Gen 12, ta sẽ bắt đầu với phần bo mạch chủ. Được đặt niềm tin cho khả năng khai thác hiệu năng, ASUS PRIME H610M-A WIFI D4 chính là sự lựa chọn tuyệt vời cho bộ PC của chúng ta. Mang đến thiết kế được cải tiến của dòng mainboard giá rẻ, ASUS PRIME H610M-A WIFI D4 cho chúng ta cái nhìn thân thiện cùng dàn VRM nổi bật. Trang bị chipset H610 mới nhất, ASUS PRIME H610M-A WIFI D4 cho khả năng tận dụng sức mạnh từ những CPU Intel Gen 12 mạnh mẽ.",
+  "productCategory": "pc-gaming",
+  "productBrand": "intel",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733704185/TC-X28/mvwrdspkimcgort8t7x2.webp",
+  "createdAt": {
+    "$date": "2024-12-09T00:30:14.242Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:30:14.242Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67563a59840c71eeb6a18618"
+  },
+  "productName": "PC GVN Homework i3 - GT",
+  "productPrice": 8730000,
+  "productSalePrice": 8030000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "ASUS PRIME H610M-A WIFI D4 cung cấp cho người dùng những công cụ từ chính tay ASUS tạo ra giúp bạn dễ dàng điều chỉnh hiệu suất phù hợp với nhu cầu sử dụng. ",
+  "productCategory": "pc-gaming",
+  "productBrand": "intel",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733704247/TC-X28/debjhtk9fo8emzuqa7if.webp",
+  "createdAt": {
+    "$date": "2024-12-09T00:31:21.013Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:31:21.013Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67563d82840c71eeb6a1862d"
+  },
+  "productName": "PC GVN Intel i3-12100F/ VGA RX 6500XT (Powered by ASUS)",
+  "productPrice": 10230000,
+  "productSalePrice": 9990000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Card đồ họa AMD Radeon RX 6500XT là một lựa chọn hợp lý cho những ai muốn trải nghiệm đồ họa mượt mà ở mức cài đặt trung bình. Với kiến trúc RDNA 2 tiên tiến, card đồ họa này mang đến hiệu suất chơi game ấn tượng, đặc biệt là với các tựa game eSports phổ biến. Bộ nhớ GDDR6 dung lượng lớn đảm bảo việc xử lý hình ảnh diễn ra nhanh chóng và mượt mà.",
+  "productCategory": "pc-gaming",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733705055/TC-X28/ovh6vlwodppe4la6rnef.webp",
+  "createdAt": {
+    "$date": "2024-12-09T00:44:50.257Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T00:44:50.257Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756adaeda788606e23f7692"
+  },
+  "productName": "Laptop ASUS Vivobook S 14 OLED S5406MA PP046WS",
+  "productPrice": 26990000,
+  "productSalePrice": 24290000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "ASUS Vivobook S 14 OLED S5406MA PP046WS là một trong những chiếc laptop đáng chú ý trên thị trường hiện nay, đặc biệt dành cho những người dùng yêu thích thiết kế đẹp mắt và trải nghiệm hình ảnh sắc nét. Với trọng lượng chỉ 1,3kg, card đồ họa mạnh mẽ được hãng chuẩn bị sẵn 16GB RAM và thời lượng pin khổng lồ đã giúp cho chiếc laptop này nổi bật trong phân khúc đồng giá.",
+  "productCategory": "laptop",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733733752/TC-X28/bdapgdtbxypdcamudhc5.webp",
+  "createdAt": {
+    "$date": "2024-12-09T08:43:26.896Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:43:26.896Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756adfbda788606e23f7695"
+  },
+  "productName": "Laptop gaming ASUS Vivobook 16X K3605ZF RP634W",
+  "productPrice": 20990000,
+  "productSalePrice": 17290000,
+  "productTotalStock": 4,
+  "productAverageReview": 0,
+  "productDescription": "Nếu bạn đang mong muốn tìm một chiếc laptop mỏng nhẹ, hiệu năng mạnh đáp ứng được các nhu cầu từ giải trí đến công việc thì bạn có thể tham khảo ngay chiếc Laptop gaming ASUS Vivobook 16X K3605ZF RP634W. Với màn hình WUXGA 16inch, ổ cứng 512GB SSD cùng 16GB RAM cho khả năng đa nhiệm mượt mà chắc chắn sẽ làm hài lòng những người dùng khó tính nhất. Cùng tham khảo những chi tiết dưới đây để biết thêm về chiếc máy siêu phẩm này.",
+  "productCategory": "laptop",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733733834/TC-X28/j3bebomudlgm3lqopkuj.webp",
+  "createdAt": {
+    "$date": "2024-12-09T08:44:43.762Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:44:43.762Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756ae48da788606e23f7698"
+  },
+  "productName": "Laptop gaming ASUS Vivobook 16X K3605ZU RP296W",
+  "productPrice": 28490000,
+  "productSalePrice": 21990000,
+  "productTotalStock": 4,
+  "productAverageReview": 0,
+  "productDescription": "ASUS Vivobook 16X K3605ZU RP296W là một chiếc laptop gaming tầm trung mới ra mắt của ASUS với thiết kế hiện đại, hiệu năng mạnh mẽ và mức giá hợp lý. Máy được trang bị bộ vi xử lý Intel Core i5 thế hệ 12 mới nhất, card đồ họa NVIDIA GeForce RTX 4050, 16GB RAM và ổ cứng SSD 512GB, giúp bạn chiến mượt các tựa game phổ biến hiện nay. MUX Switch giúp bạn toàn quyền kiểm soát hiệu năng đồ họa, tối ưu hóa hiệu suất cho từng nhu cầu sử dụng.",
+  "productCategory": "laptop",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733733927/TC-X28/tyac4cjzyi28mywnhuqr.webp",
+  "createdAt": {
+    "$date": "2024-12-09T08:46:00.174Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:46:00.174Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756ae87da788606e23f769b"
+  },
+  "productName": "Laptop ASUS Vivobook 14 OLED A1405ZA KM264W",
+  "productPrice": 18990000,
+  "productSalePrice": 15790000,
+  "productTotalStock": 5,
+  "productAverageReview": 0,
+  "productDescription": "ASUS Vivobook 14 OLED A1405ZA KM264W mang lại trải nghiệm hình ảnh tốt hơn với trang bị màn hình OLED. Thiết kế mỏng nhẹ cùng cấu hình mạnh mẽ cho phép người dùng nâng cao hiệu suất khi làm việc. Hãy cùng GEARVN tìm hiểu về chiếc laptop này nhé!",
+  "productCategory": "laptop",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733733990/TC-X28/y1ma2u7l5veyfc6ygloa.webp",
+  "createdAt": {
+    "$date": "2024-12-09T08:47:03.803Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:47:03.803Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756aefbda788606e23f769e"
+  },
+  "productName": "Laptop ASUS Vivobook S 16 OLED S5606MA MX051W",
+  "productPrice": 29990000,
+  "productSalePrice": 26290000,
+  "productTotalStock": 7,
+  "productAverageReview": 0,
+  "productDescription": "ASUS Vivobook S16 OLED S5606MA MX051W là sự kết hợp tuyệt vời giữa thiết kế mỏng nhẹ và công nghệ hiện đại. Chip Intel® Core™ Ultra 7 cung cấp nguồn sức mạnh đặc biệt ấn tượng, đồng thời hỗ trợ các công nghệ AI rất hiệu quả. Ngoại hình máy cực kì đơn giản, nhưng toát lên vẻ đẹp sang trọng, cao cấp thu hút người dùng ngay từ cái nhìn đầu tiên. Hãy cùng GEARVN tìm hiểu thông số kĩ thuật của chiếc máy này nhé!",
+  "productCategory": "laptop",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733734106/TC-X28/wcrtn1fofm2jezm9tgy3.webp",
+  "createdAt": {
+    "$date": "2024-12-09T08:48:59.843Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:48:59.843Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756af40da788606e23f76a1"
+  },
+  "productName": "Laptop ASUS Zenbook 14 OLED UX3405MA PP152W",
+  "productPrice": 34990000,
+  "productSalePrice": 31290000,
+  "productTotalStock": 3,
+  "productAverageReview": 0,
+  "productDescription": "Laptop ASUS Zenbook 14 OLED UX3405MA PP152W là một phiên bản laptop ASUS nhỏ gọn nhẹ nhàng chỉ với 1.2kg nhưng lại sở hữu bộ vi xử lý vô cùng mạnh mẽ. Hãy cùng GEARVN xem qua em laptop này có đủ cân được mọi task của bạn không nhé!",
+  "productCategory": "laptop",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733734178/TC-X28/o8mqadxidjyk5bmhjcqi.webp",
+  "createdAt": {
+    "$date": "2024-12-09T08:50:08.606Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:50:08.606Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b18fda788606e23f76ba"
+  },
+  "productName": "Laptop Dell Inspiron 14 5440 i5U085W11IBU",
+  "productPrice": 24990000,
+  "productSalePrice": 18990000,
+  "productTotalStock": 3,
+  "productAverageReview": 0,
+  "productDescription": "Dell Inspiron 14 5440 i5U085W11IBU là chiếc laptop mỏng nhẹ vô cùng phù hợp cho các bạn học sinh, sinh viên, dân văn phòng nhu cầu cần một chiếc laptop đáp ứng tốt tất cả các tác vụ cơ bản, học tập, giải trí nhẹ nhàng. Dell Inspiron 14 5440 i5U085W11IBU hứa hẹn sẽ là một đối thủ tiềm năng trong phân khúc laptop dưới 25 triệu. Hãy cùng GEARVN tìm hiểu về chiếc laptop này nhé!",
+  "productCategory": "laptop",
+  "productBrand": "dell",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733734754/TC-X28/gatv1lpvukw7wlut0pgo.webp",
+  "createdAt": {
+    "$date": "2024-12-09T08:59:59.981Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T08:59:59.981Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b1d2da788606e23f76bd"
+  },
+  "productName": "Laptop Dell Inspiron 3530 N3530I716W1 Silver",
+  "productPrice": 26990000,
+  "productSalePrice": 22490000,
+  "productTotalStock": 4,
+  "productAverageReview": 0,
+  "productDescription": "Tùy theo nhiều nhu cầu khác nhau mà có nhiều dòng sản phẩm laptop Dell khác nhau. Nếu bạn đang tìm một chiếc laptop phục vụ cho nhu cầu học tập và làm việc hằng ngày thì Dell Inspiron 3530 N3530I716W1 Silver sẽ là người bạn đồng hành cực tốt. cấu hình mạnh mẽ trên thiết kế đơn giản mang lại hiệu năng giải quyết mọi công việc mượt mà, nhanh chóng. ",
+  "productCategory": "laptop",
+  "productBrand": "dell",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733734840/TC-X28/aand7lnheceubudemz0a.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:01:06.628Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:01:06.628Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b215da788606e23f76c0"
+  },
+  "productName": "Laptop Dell Inspiron T7430 N7430I58W1 Silver",
+  "productPrice": 24390000,
+  "productSalePrice": 19990000,
+  "productTotalStock": 3,
+  "productAverageReview": 0,
+  "productDescription": "Tùy theo nhiều nhu cầu khác nhau mà có nhiều dòng sản phẩm laptop Dell khác nhau. Nếu bạn đang tìm một chiếc laptop phục vụ cho nhu cầu học tập và làm việc hằng ngày thì Dell Inspiron T7430 N7430I58W1 Silver sẽ là người bạn đồng hành cực tốt. cấu hình mạnh mẽ trên thiết kế đơn giản mang lại hiệu năng giải quyết mọi công việc mượt mà, nhanh chóng. ",
+  "productCategory": "laptop",
+  "productBrand": "dell",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733734905/TC-X28/ugi8clnufr98c88deorb.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:02:13.421Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:02:13.421Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b25cda788606e23f76c3"
+  },
+  "productName": "Laptop Dell Inspiron 14 7420 1YT85",
+  "productPrice": 33990000,
+  "productSalePrice": 29990000,
+  "productTotalStock": 2,
+  "productAverageReview": 0,
+  "productDescription": "Laptop Dell Inspiron 14 7420 1YT85 là một siêu phẩm mới đến từ nhà Dell. Ở phân khúc laptop văn phòng, Dell Inspiron 14 đã hoàn thành xuất sắc nhiệm vụ của mình khi có thể thực hiện đa nhiệm tốt, hiệu năng ổn định, chất lượng hiển thị hình ảnh đẹp mắt và thiết kế sang trọng, tinh tế. Đây chính là sự lựa chọn thích hợp cho những ai yêu thích sự mới mẻ, năng động và tinh tế.",
+  "productCategory": "laptop",
+  "productBrand": "dell",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733734979/TC-X28/pmowxlotbd6lvz6wnw9k.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:03:24.466Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:03:24.466Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b2c1da788606e23f76c6"
+  },
+  "productName": "Laptop Dell XPS 13 Plus 9320 5CG56",
+  "productPrice": 59990000,
+  "productSalePrice": 57990000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Dell XPS 13 Plus 9320 5CG56 thuộc phân khúc laptop cao cấp đến từ thương hiệu Dell. Kiểu dáng hiện đại, cấu hình mạnh mẽ, kích thước mỏng nhẹ đáp ứng mọi nhu cầu công việc hằng ngày. Sở hữu màn hình Oled cực chuẩn nâng tầm trải nghiệm đồ họa trên Dell XPS. Tìm hiểu ngay cùng GEARVN\n",
+  "productCategory": "laptop",
+  "productBrand": "dell",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733735030/TC-X28/okg6wj88dflpmk4gzfwu.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:05:05.400Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:05:05.400Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b56fda788606e23f7715"
+  },
+  "productName": "Bo mạch chủ MSI Z790 GAMING PLUS WIFI DDR5",
+  "productPrice": 6990000,
+  "productSalePrice": 5990000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Hỗ trợ bộ xử lý Intel® Core™ thế hệ thứ 14/13/12, bộ xử lý Intel® Pentium® Gold và Celeron®\n\nSocket bộ xử lý LGA1700",
+  "productCategory": "mainboard",
+  "productBrand": "msi",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733735704/TC-X28/tgpbcqfc9ljutfrrl05c.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:16:31.165Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:16:31.165Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b5bfda788606e23f771c"
+  },
+  "productName": "Bo mạch chủ ASUS Z790 AYW WIFI W DDR5",
+  "productPrice": 5990000,
+  "productSalePrice": 5690000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Intel LGA1700 dành cho bộ xử lý Intel Core thế hệ thứ 14 và 13, bộ xử lý Intel Core thế hệ thứ 12, Pentium Gold và Celeron.\nHỗ trợ Công nghệ Intel Turbo Boost 2.0 và Công nghệ Intel Turbo Boost Max 3.0 **\n** Hỗ trợ Công nghệ Intel® Turbo Boost Max 3.0 tùy thuộc vào loại CPU.",
+  "productCategory": "mainboard",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733735840/TC-X28/vcrn8bc0uutrr2tqpuyq.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:17:51.815Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:17:51.815Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b624da788606e23f7721"
+  },
+  "productName": "Bộ vi xử lý AMD Ryzen 5 8400F / 4.2GHz Boost 4.7GHz / 6 nhân 12 luồng / 22MB / AM5",
+  "productPrice": 4990000,
+  "productSalePrice": 4990000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Số nhân xử lý\t6\nSố luồng xử lý\t12\nTốc độ xử lý\n\nXung cơ bản 4.2GHz, xung tối đa 4.7GHz\nTotal L2 Cache:\n\n6MB\n\nTotal L3 Cache:\n\n16MB\n\nMở khóa để ép xung\tCó\nCông nghệ xử lý cho lõi CPU\t\nTSMC 4nm FinFET\n\nKiến trúc\tAM5",
+  "productCategory": "cpu",
+  "productBrand": "amd",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733735927/TC-X28/egktcadfdv9dkcbbdysj.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:19:32.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:19:32.979Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b696da788606e23f7733"
+  },
+  "productName": "Card màn hình MSI GeForce RTX 4070 SUPER 12G VENTUS 2X OC",
+  "productPrice": 20990000,
+  "productSalePrice": 18590000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Nhân đồ họa\n\nNVIDIA® GeForce RTX™ 4070 SUPER\nGiao thức kết nối\tPCI Express® Gen 4\nXung nhịp\tExtreme Performance: 2520 MHz (MSI Center)\nBoost: 2505 MHz\nNhân CUDA\t7168 đơn vị\nTốc độ bộ nhớ\t21 Gbps\nBộ nhớ\n\n12GB GDDR6X\nBus bộ nhớ\n\n192-bit\n\nCổng xuất hình\n\nDisplayPort x 3 (v1.4a)\nHDMI x 1 (Hỗ trợ HDR 4K@120Hz, HDR 8K@60Hz và Tốc độ làm mới thay đổi như được chỉ định trong HDMI 2.1a)",
+  "productCategory": "vga",
+  "productBrand": "nvidia",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736047/TC-X28/j1phjpzdx8uzwxv9cipo.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:21:26.897Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:21:26.897Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b6e4da788606e23f773c"
+  },
+  "productName": "Vỏ máy tính ASUS ROG Hyperion GR701 BTF Edition",
+  "productPrice": 12990000,
+  "productSalePrice": 11990000,
+  "productTotalStock": 20,
+  "productAverageReview": 0,
+  "productDescription": "Thương hiệu:\n\nAsus\n\nBảo hành:\n\n12 tháng\n\nSeries:\n\nROG \n\nMàu sắc:\n\nĐen\n\nModel:\n\nROG Hyperion GR701 BTF Edition\n\nKích thước:\n\nMid Tower\n\nVật liệu:\n\nNhôm, thép, kính cường lực, nhựa ABS\n\nKích thước chuẩn:\n\n268 x 639 x 659 (mm)",
+  "productCategory": "case",
+  "productBrand": "asus",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736137/TC-X28/ynpqkgdximoxpbsabr4a.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:22:44.877Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:22:44.877Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b71fda788606e23f773f"
+  },
+  "productName": "Nguồn máy tính MSI MAG A1250GL PCIE5 - 80 Plus Gold - Full Modular (1250W)",
+  "productPrice": 6290000,
+  "productSalePrice": 5490000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Quạt tản nhiệt\tTORX FAN 12CM\nKhối lượng\t169g\nMô-đun\tCó (mô-đun hoàn toàn)\nKích thước\t120mm x 120mm x 25.6mm\nQuạt vòng bi\tFluid Dynamic Bearing\nBearing Type\tHydro-Dynamic Bearing\nTốc độ quạt\t500 - 1800 ±15% RPM\nCông suất nguồn\t1250W\nPower Excursion\t2500W (*up to 200% of the PSU's rated power for 100μs)",
+  "productCategory": "nguon",
+  "productBrand": "msi",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736201/TC-X28/ghws7dit9bovlze5rjxy.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:23:43.286Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:23:43.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b792da788606e23f774a"
+  },
+  "productName": "Tản nhiệt AIO NZXT Kraken Elite 280 RGB WHITE (RL-KR28E-W1)",
+  "productPrice": 10990000,
+  "productSalePrice": 7990000,
+  "productTotalStock": 3,
+  "productAverageReview": 0,
+  "productDescription": "Nắp pump\tChất liệu: Nhôm và nhựa\nHướng hiển thị: Phần mềm có thể điều chỉnh Mặc định, +90, +180 và -90 Độ\nVùng hoạt động của bảng hiển thị: đường kính 2,36” (60mm)\nMàu hiển thị: LCD màu trung thực 24-bit\nĐộ phân giải màn hình: 640 x 640 px\nĐộ sáng màn hình: 690 cd/m²\nLoại bảng hiển thị: TFT-LCD (Góc nhìn rộng)\nKhối nước\tKích thước: Đường kính: 81.9mm; H: 59.5mm\nChất liệu: \nBlock: Đồng\nHousing: Nhựa",
+  "productCategory": "tan-nhiet",
+  "productBrand": "nzxt",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736313/TC-X28/rovwduufepb4elxktkfp.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:25:38.063Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:25:38.063Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b815da788606e23f7757"
+  },
+  "productName": "Ổ Cứng SSD Samsung 870 EVO 1TB Sata3",
+  "productPrice": 2990000,
+  "productSalePrice": 2690000,
+  "productTotalStock": 20,
+  "productAverageReview": 0,
+  "productDescription": "SSD Samsung 870 EVO 2.5' SATA III được xem là một trong những giải pháp mở rộng hệ thống lưu trữ cực kỳ tối ưu cho dung lượng cho máy tính của bạn. Đây sẽ là một trong những ổ cứng SSD 1TB bạn nên sở hữu với giá thành vô cùng hợp lý.\n",
+  "productCategory": "o-cung",
+  "productBrand": "samsung",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736441/TC-X28/c93hqu1jzhw9dmsgzti5.jpg",
+  "createdAt": {
+    "$date": "2024-12-09T09:27:49.725Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:27:49.725Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b85fda788606e23f775c"
+  },
+  "productName": "RAM Corsair Dominator Titanium Black 96GB (2x48GB) RGB 6600 DDR5 (CMP96GX5M2B6600C32)",
+  "productPrice": 13990000,
+  "productSalePrice": 12590000,
+  "productTotalStock": 19,
+  "productAverageReview": 0,
+  "productDescription": "Bao gồm quạt\tKhông\nMàu sắc\tBlack\nTương thích bộ nhớ\t\nDòng Intel 700 (CPU Intel Core thế hệ thứ 13)\nTương thích chi tiết bộ nhớ\tDòng Intel 700 (CPU Intel Core thế hệ thứ 13)\nChất liệu\tNhôm\nMàu led\tRGB\nSeries bộ nhớ\tDominator Titanium\nKích thước bộ nhớ\t96GB (2x48GB)\nLoại bộ nhớ\tDDR5",
+  "productCategory": "ram",
+  "productBrand": "consair",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736515/TC-X28/qzyeqep8jg5qbleyk3xw.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:29:03.750Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:29:03.750Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b8a8da788606e23f775f"
+  },
+  "productName": "Màn hình Samsung Odyssey G6 LS27DG602 OLED 27\" 2K 360Hz chuyên game",
+  "productPrice": 24990000,
+  "productSalePrice": 18990000,
+  "productTotalStock": 10,
+  "productAverageReview": 0,
+  "productDescription": "Samsung Odyssey G6 LS27DG602 là một trong những màn hình gaming cao cấp nhất hiện nay, được trang bị những công nghệ hàng đầu để mang đến trải nghiệm chơi game đỉnh cao. Với tấm nền OLED tuyệt đẹp, tần số quét 360Hz siêu mượt và thời gian phản hồi cực nhanh, Odyssey G6 hứa hẹn đem đến cho người dùng những trải nghiệm chơi game, làm việc trọn vẹn nhất.",
+  "productCategory": "man-hinh",
+  "productBrand": "samsung",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736592/TC-X28/ykv5nwktbqjkczorwtxf.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:30:16.319Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:30:16.319Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b8edda788606e23f7762"
+  },
+  "productName": "Bàn phím Logitech G Pro X 60 Light Speed White",
+  "productPrice": 4990000,
+  "productSalePrice": 3290000,
+  "productTotalStock": 6,
+  "productAverageReview": 0,
+  "productDescription": "Bàn phím Logitech G Pro X 60 Light Speed White với bố cục 60% nhỏ gọn loại bỏ cụm phím số và phím chức năng. Không chỉ giúp tiết kiệm diện tích bàn mà còn mang lại không gian rộng rãi cho việc di chuyển chuột, lý tưởng cho game thủ và những người yêu thích sự gọn gàng. Thiết kế này sẽ làm bừng sáng góc làm việc của bạn, biến nó thành một không gian hiện đại và ngăn nắp.",
+  "productCategory": "ban-phim",
+  "productBrand": "logitech",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736657/TC-X28/d1udxf2ylppvnqzdai5l.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:31:25.918Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:31:25.918Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b941da788606e23f7765"
+  },
+  "productName": "Chuột Razer DeathAdder V3 Hyperspeed Wireless",
+  "productPrice": 2990000,
+  "productSalePrice": 2390000,
+  "productTotalStock": 28,
+  "productAverageReview": 0,
+  "productDescription": "Màu sắc\tĐen\nKết nối\tKhông dây\nLed \tKhông\nCảm biến\tCảm biến quang học Focus X 26K\nDPI\t26000\nIPS\t500\nGia tốc tối đa (G)\t40\nSố nút\t8\nSwitch\tOptical Gen-3\nTuổi thọ Switch\tLên đến 90 triệu lần nhấn",
+  "productCategory": "chuot",
+  "productBrand": "razer",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736726/TC-X28/iqtok6bailgohjvhac7s.png",
+  "createdAt": {
+    "$date": "2024-12-09T09:32:49.430Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:32:49.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6756b997da788606e23f7768"
+  },
+  "productName": "Tấm lót chuột Steelseries QCK Edge Medium",
+  "productPrice": 490000,
+  "productSalePrice": 350000,
+  "productTotalStock": 20,
+  "productAverageReview": 0,
+  "productDescription": "SteelSeries QCK Edge với thiết kế phần bo viên được khâu dọc theo các cạnh của bề mặt, đảm bảo nó sẽ không bao giờ bị sờn hoặc bong tróc chỉ trong quá trình sử dụng.",
+  "productCategory": "lot-chuot",
+  "productBrand": "steelseries",
+  "productImg": "http://res.cloudinary.com/dowbqbuzi/image/upload/v1733736812/TC-X28/rzvx8z45pbqf4qgitjvi.webp",
+  "createdAt": {
+    "$date": "2024-12-09T09:34:15.227Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-09T09:34:15.227Z"
+  },
+  "__v": 0
+}]
