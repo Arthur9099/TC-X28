@@ -47,6 +47,8 @@ function HeaderRightContent() {
 
   function handleLogout() {
     dispatch(logoutUser());
+    navigate("/");
+    window.location.reload();
   }
 
   useEffect(() => {

@@ -55,12 +55,12 @@ function ShoppingCheckout() {
       cartId: cartItems?._id,
       cartItems: cartItems.items.map((singleCartItem) => ({
         productId: singleCartItem?.productId,
-        title: singleCartItem?.title,
-        image: singleCartItem?.image,
-        price:
-          singleCartItem?.salePrice > 0
-            ? singleCartItem?.salePrice
-            : singleCartItem?.price,
+        productName: singleCartItem?.productName,
+        productImg: singleCartItem?.productImg,
+        productPrice:
+          singleCartItem?.productSalePrice > 0
+            ? singleCartItem?.productSalePrice
+            : singleCartItem?.productPrice,
         quantity: singleCartItem?.quantity,
       })),
       addressInfo: {
@@ -82,7 +82,7 @@ function ShoppingCheckout() {
     };
 
     dispatch(createNewOrder(orderData)).then((data) => {
-      console.log(data, "sangam");
+      console.log(data, "nguyentran");
       if (data?.payload?.success) {
         setIsPaymemntStart(true);
       } else {
@@ -121,9 +121,7 @@ function ShoppingCheckout() {
           </div>
           <div className="mt-4 w-full">
             <Button onClick={handleInitiatePaypalPayment} className="w-full">
-              {isPaymentStart
-                ? "Processing Paypal Payment..."
-                : "Checkout with Paypal"}
+              {isPaymentStart ? "Processing Paypal Payment..." : "Thanh toán"}
             </Button>
           </div>
         </div>

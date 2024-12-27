@@ -13,23 +13,27 @@ function AdminProductTile({
       <div>
         <div className="relative">
           <img
-            src={product?.image}
-            alt={product?.title}
+            src={product?.productImg}
+            alt={product?.productName}
             className="w-full h-[300px] object-cover rounded-t-lg"
           />
         </div>
         <CardContent>
-          <h2 className="text-xl font-bold mb-2 mt-2">{product?.title}</h2>
+          <h2 className="text-xl font-bold mb-2 mt-2">
+            {product?.productName}
+          </h2>
           <div className="flex justify-between items-center mb-2">
             <span
               className={`${
-                product?.salePrice > 0 ? "line-through" : ""
-              } text-lg font-semibold text-primary`}
+                product?.productSalePrice > 0 ? "line-through" : ""
+              } text-lg font-semibold text-primary text-slate-400`}
             >
-              ${product?.price}
+              {product?.productPrice.toLocaleString()}đ
             </span>
-            {product?.salePrice > 0 ? (
-              <span className="text-lg font-bold">${product?.salePrice}</span>
+            {product?.productSalePrice > 0 ? (
+              <span className="text-lg font-bold text-red-500">
+                {product?.productSalePrice.toLocaleString()}đ
+              </span>
             ) : null}
           </div>
         </CardContent>

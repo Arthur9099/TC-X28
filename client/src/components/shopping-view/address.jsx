@@ -128,7 +128,7 @@ function Address({ setCurrentSelectedAddress, selectedId }) {
       </div>
       <CardHeader>
         <CardTitle>
-          {currentEditedId !== null ? "Edit Address" : "Add New Address"}
+          {currentEditedId !== null ? "Chỉnh sửa địa chỉ" : "Thêm địa chỉ mới"}
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
@@ -136,7 +136,9 @@ function Address({ setCurrentSelectedAddress, selectedId }) {
           formControls={addressFormControls}
           formData={formData}
           setFormData={setFormData}
-          buttonText={currentEditedId !== null ? "Edit" : "Add"}
+          buttonText={
+            currentEditedId !== null ? "Chỉnh sửa" : "Thêm địa chỉ mới"
+          }
           onSubmit={handleManageAddress}
           isBtnDisabled={!isFormValid()}
         />

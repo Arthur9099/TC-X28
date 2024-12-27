@@ -227,37 +227,37 @@ export const sortOptions = [
 
 export const addressFormControls = [
   {
-    label: "Address",
+    label: "Địa chỉ",
     name: "address",
     componentType: "input",
     type: "text",
-    placeholder: "Enter your address",
+    placeholder: "Nhập địa chỉ của bạn",
   },
   {
-    label: "City",
+    label: "Thành phố",
     name: "city",
     componentType: "input",
     type: "text",
-    placeholder: "Enter your city",
+    placeholder: "Nhập thành phố của bạn",
   },
   {
     label: "Pincode",
     name: "pincode",
     componentType: "input",
     type: "text",
-    placeholder: "Enter your pincode",
+    placeholder: "Nhập pincode của bạn",
   },
   {
-    label: "Phone",
+    label: "Số điện thoại",
     name: "phone",
     componentType: "input",
     type: "text",
-    placeholder: "Enter your phone number",
+    placeholder: "Nhập số điện thoãi của bạn",
   },
   {
-    label: "Notes",
+    label: "Ghi chú",
     name: "notes",
     componentType: "textarea",
-    placeholder: "Enter any additional notes",
+    placeholder: "Nhập ghi chú của bạn",
   },
 ];
